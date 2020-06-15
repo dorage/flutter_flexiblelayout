@@ -2,7 +2,7 @@ name: flexiblelayout
 description: easy to divide layout.
 repository: https://github.com/dorage/flutter_flexiblelayout
 
-version: 1.0.0+1
+version: 1.0.1+1
 
 environment:
     sdk: '>=2.7.0 <3.0.0'
