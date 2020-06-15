@@ -2,6 +2,10 @@
 
 Easy to divide layout with Flexible
 
+## Installation
+
+https://pub.dev/packages/flexiblelayout#-installing-tab-
+
 ## Params
 
 | params             | description                             |
