@@ -16,30 +16,26 @@ class FlexibleLayout extends StatelessWidget {
     @required this.children,
     this.padding,
     this.innerPadding,
-    this.color,
-    this.mainAxisAlignment,
-    this.crossAxisAlignment,
+    this.color = Colors.white,
+    this.mainAxisAlignment = MainAxisAlignment.spaceAround,
+    this.crossAxisAlignment = CrossAxisAlignment.stretch,
     this.isColumn = true,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: color == null ? Colors.white : color,
+      color: color,
       padding: padding,
       child: isColumn
           ? Column(
-              mainAxisAlignment:
-                  mainAxisAlignment ?? MainAxisAlignment.spaceAround,
-              crossAxisAlignment:
-                  crossAxisAlignment ?? CrossAxisAlignment.stretch,
+              mainAxisAlignment: mainAxisAlignment,
+              crossAxisAlignment: crossAxisAlignment,
               children: _layout(),
             )
           : Row(
-              mainAxisAlignment:
-                  mainAxisAlignment ?? MainAxisAlignment.spaceAround,
-              crossAxisAlignment:
-                  crossAxisAlignment ?? CrossAxisAlignment.stretch,
+              mainAxisAlignment: mainAxisAlignment,
+              crossAxisAlignment: crossAxisAlignment,
               children: _layout(),
             ),
     );
